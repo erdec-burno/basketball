@@ -18,33 +18,39 @@ const SignIn: React.FC = () => {
 }
 
 const Wrapper = styled.div`
-  position: relative;
-  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   height: 1024px;
-  background: #F5FBFF;
-  top: 340px;
-  border: 1px solid #CCC;
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    width: 1140px;
+  /*top: 340px;*/
+  /*border: 1px solid #CCC;*/
+  /*@media (min-width: 1400px) {
+    width: 1320px;
+    padding: 1.5rem 2.5rem;
   }
+  @media (min-width: 768px) {
+    width: 720px;
+    padding: 1rem 2rem;
+  }*/
 `;
 
 const Left = styled.div`
-  position: absolute;
+  /*position: absolute;
   width: 606px;
   height: 1024px;
   left: 0px;
-  top: 0px;
+  top: 0px;*/
+  flex: 2 1 606px;
   background: #FFFFFF;
 `;
 
 const Right = styled.div`
-  position: absolute;
+  /*position: absolute;
   width: 834px;
   height: 1024px;
   left: 606px;
-  top: 0px;
+  top: 0px;*/
+  flex: 2 1 834px;
   background: #F5FBFF;
 `;
 

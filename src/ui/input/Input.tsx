@@ -39,7 +39,7 @@ const Label = styled.label`
   line-height: 24px;
   color: #707070;*/
   display: inline-block;
-  /*margin-bottom: 1rem;*/
+  margin-bottom: 1rem;
 `;
 
 const InputStyled = styled.input`
@@ -48,8 +48,9 @@ const InputStyled = styled.input`
   //right: 0%;
   //top: 28.26%;
   //bottom: 28.26%;
+  display: inline-block;
   height: 40px;
-  width: 366px;
+  width: 100%;
   left: 0px;
   top: 26px;
   border-radius: 4px;

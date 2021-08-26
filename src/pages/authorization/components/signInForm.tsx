@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Input from "../../../ui/input/Input";
+import Title from "../../../ui/title/Title";
 
 /*interface IProps {
     login: string;
@@ -11,24 +12,23 @@ import Input from "../../../ui/input/Input";
 const SignInForm = () => {
     return (
         <Form>
+            <Title value="SignIn"/>
             <Input type="text" labelValue="Login" />
             <Input type="password" labelValue="Password" />
-            {/*<div className="">
-                <label htmlFor="login">Password</label>
-                <input type="text" className="form-control" id="login" placeholder="" />
-            </div>
-            <div className="">
-                <label htmlFor="password">Password</label>
-                <input type="password" className="form-control" id="password" placeholder="" />
-            </div>*/}
         </Form>
     );
 }
 
 const Form = styled.div`
-  /*top: 122px;*/
   position: relative;
-  width: 100%;
+  width: 400px;
+  margin: 0 auto;
+  @media (max-width: 992px) {
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 /*const FormGroup = styled.div`
